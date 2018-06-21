@@ -3,6 +3,4 @@
     hosts: all
     tasks:
         - name: update the system
-          yum:
-            name: "*"
-            state: security
+          command: yum update --security
