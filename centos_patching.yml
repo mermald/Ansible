@@ -1,8 +1,8 @@
 ---
-- name: centos security patching
+- name: CentOS Security Patching
   hosts: all
   tasks:
-    - name:
+    - name: Patch CentOS
         command: yum update --security
         register: yum_update
 
