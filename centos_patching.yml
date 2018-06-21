@@ -2,8 +2,8 @@
 - name: centos security patching
   hosts: all
   tasks:
-    command:yum update --security
-    register:yum_update
+    command: yum update --security
+    register: yum_update
 
 
     - name: restart system
