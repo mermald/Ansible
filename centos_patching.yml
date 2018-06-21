@@ -4,4 +4,4 @@
     tasks:
         - name: update the system
           command: yum update --security
-            become:
+            become: yes
