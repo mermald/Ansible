@@ -4,3 +4,4 @@
     tasks:
         - name: update the system
           command: sudo yum update --security
+          become: yes
