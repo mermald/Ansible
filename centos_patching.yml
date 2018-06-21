@@ -4,10 +4,4 @@
   tasks:
     command: yum update --security
     register: yum_update
-    command: shutdown -r now
-    async: 0
-    poll: 0
-    when: reboot_required.stdout=="reboot needed"
-    register: reboot_started
-    ignore_errors: true
 
