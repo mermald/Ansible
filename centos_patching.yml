@@ -4,6 +4,4 @@
     tasks:
         - name: update the system
           yum:
-            name: "security"
-            state: latest
-
+            name: "update --security"
