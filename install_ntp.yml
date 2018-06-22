@@ -1,7 +1,7 @@
 ---
-- name: Install and Start NTP
-  hosts: all
-  tasks:
-    yum:
-      name: ntp
-      state: present
+-   name: Install and Start NTP
+    hosts: all
+    tasks:
+      yum:
+        name: ntp
+        state: present
