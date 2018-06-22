@@ -7,3 +7,8 @@
           yum:
             name: ntp
             state: present
+            
+        - name: start NTP
+          service:
+            name: ntpd
+            state: running
