@@ -7,4 +7,3 @@
           yum:
             name: ntp
             state: present
-            become:
