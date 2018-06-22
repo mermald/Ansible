@@ -1,0 +1,9 @@
+---
+- name: CentOS Security Patching
+  hosts: all
+  tasks:
+    - name: update the system
+      yum:
+        name: "*"
+        security:
+      become:
