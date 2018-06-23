@@ -37,3 +37,6 @@
     - name: Install net-tools
       yum:
         name: net-tools
+    
+    - name: Include another yaml file
+      include: ntp.yml
