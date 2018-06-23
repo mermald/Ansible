@@ -25,3 +25,15 @@
       service:
         name: ovirt-guest-agent
         state: started
+        
+    - name: Install yum-utils
+      yum:
+        name: yum-utils
+        
+    - name: Install bind-utils
+      yum:
+        name: bind-utils
+        
+    - name: Install net-tools
+      yum:
+        name: net-tools
