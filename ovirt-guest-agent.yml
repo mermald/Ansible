@@ -2,6 +2,10 @@
 - name: Install and Start oVirt Guest Agent
   hosts: all
   tasks:
+   - name: Update CentOS 
+     yum:
+      name: "*"
+     become:
    - name: Install oVirt Repos
      yum:
       name: "centos-release-ovirt42"
