@@ -12,10 +12,7 @@
       when: 
         ansible_distribution == 'CentOS'
   
-    - name: Update CentOS 
-       yum:
-         name: "*"
-       become:
+    
     - name: Install oVirt Repos
        yum:
          name: "centos-release-ovirt42"
