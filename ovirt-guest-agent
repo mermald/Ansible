@@ -1,0 +1,17 @@
+---
+- name: Install and Start oVirt Guest Agent
+  hosts: all
+  tasks:
+   - name: Install oVirt Repos
+     yum:
+      name: "centos-release-ovirt42"
+     become:
+   - name: Install oVirt Guest Agent
+     yum: 
+      name: "ovirt-guest-agent-common"
+     become:
+   - name: Enable oVirt Guest Agent
+     service:
+      name: ovirt-guest-agent
+      state: started
+   
