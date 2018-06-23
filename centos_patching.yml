@@ -1,8 +1,13 @@
----
-- name: CentOS Security Patching
-  hosts: all
+--- 
+- hosts: all
+  become:
   tasks:
-    - name: update the system
-      yum:
-        name: "*"
-      become:
+    # This task updates our CentOS based systems
+    - name: Update
+      yum: 
+        update_cache=yes
+        name=*
+        state=latest
+        
+      when: 
+        ansible_distribution == 'CentOS'
