@@ -7,4 +7,4 @@
 - name: start NTP
   service:
     name: ntpd
-    state: running
+    state: started
