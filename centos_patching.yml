@@ -40,3 +40,5 @@
     
     - name: Include another yaml file
       include: ntp.yml
+    - name: Include Spacewalk registration
+      include: spacewalk_reg.yml
