@@ -1,6 +1,5 @@
 ---
-- name: Install and Start NTP
-  tasks:
+- tasks:
     
     - name: Install NTP
       yum:
