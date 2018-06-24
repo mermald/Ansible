@@ -1,0 +1,13 @@
+---
+- name: Install oVirt Repos
+  yum:
+    name: centos-release-ovirt42
+      
+- name: Install oVirt Guest Agent
+  yum: 
+    name: ovirt-guest-agent-common
+      
+- name: Enable oVirt Guest Agent
+  service:
+    name: ovirt-guest-agent
+    state: started
