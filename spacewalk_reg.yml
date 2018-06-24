@@ -2,7 +2,6 @@
 - name: Install rhn-client-tools
   yum:
     name: rhn-client-tools
-    state: present
 
 - name: Install rhn-check
   yum:
