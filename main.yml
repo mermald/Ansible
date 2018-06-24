@@ -1,6 +1,5 @@
 --- 
-- hosts: local
-  connection: local
+- hosts: all
   become:
   tasks:
     # This task updates our CentOS based systems
