@@ -1,14 +1,4 @@
 ---
-- name: Install Spacewalk repo
-  yum:
-    name: https://copr-be.cloud.fedoraproject.org/results/@spacewalkproject/spacewalk-2.8-client/epel-7-x86_64/00742644-spacewalk-repo/spacewalk-client-repo-2.8-11.el7.centos.noarch.rpm
-    state: present
-
-- name: Install Spacewalk repo
-  yum:
-    name: http://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-    state: present
-
 - name: Install rhn-client-tools
   yum:
     name: rhn-client-tools
