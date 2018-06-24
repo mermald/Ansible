@@ -1,9 +1,29 @@
 ---
-- name: Install Plugins
+- name: Install rhn-client-tools
   yum:
-    name: rhn-client-tools rhn-check rhn-setup rhnsd m2crypto yum-rhn-plugin
+    name: rhn-client-tools
     state: present
-    
+
+- name: Install rhn-check
+  yum:
+    name: rhn-check
+
+- name: Install rhn-setup
+  yum:
+    name: rhn-setup
+
+- name: Install rhnsd
+  yum:
+    name: rhnsd
+
+- name: Install m2crypto
+  yum:
+    name: m2crypto
+
+- name: Install yum-rhn-plugin
+  yum:
+    name: yum-rhn-plugin
+
 - name: Install epel-release
   yum:
     name: epel-release
