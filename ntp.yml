@@ -1,13 +1,10 @@
 ---
-- hosts: all
-  tasks:
-    
-    - name: Install NTP
-      yum:
-        name: ntp
-        state: present
+- name: Install NTP
+  yum:
+    name: ntp
+    state: present
   
-    - name: start NTP
-      service:
-        name: ntpd
-        state: running
+- name: start NTP
+  service:
+    name: ntpd
+    state: running
