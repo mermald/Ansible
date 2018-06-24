@@ -1,5 +1,6 @@
 ---
 - name: Install and Start NTP
+  hosts: all
   tasks:
     
   - name: Install NTP
