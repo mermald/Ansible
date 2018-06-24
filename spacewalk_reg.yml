@@ -1,0 +1,19 @@
+---
+- name: Install Plugins
+  yum:
+    name: rhn-client-tools rhn-check rhn-setup rhnsd m2crypto yum-rhn-plugin
+    state: present
+    
+- name: Install epel-release
+  yum:
+    name: epel-release
+    state: present
+
+- name: Install Spacewalk repo
+  yum:
+    name: http://yum.spacewalkproject.org/2.3/RHEL/7/x86_64/spacewalk-repo-2.3-4.el7.noarch.rpm
+    state: present
+    
+- name: Register system with Spacewalk
+  command:
+    name: "rhnreg_ks --serverUrl=http://spacewalk.sphere.us/XMLRPC --activationkey=1-a679786505204c5e376b342386bd5aba"
