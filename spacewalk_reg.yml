@@ -31,7 +31,7 @@
 
 - name: Install Spacewalk repo
   command:
-    name: rpm -Uvh http://yum.spacewalkproject.org/2.3/RHEL/7/x86_64/spacewalk-repo-2.3-4.el7.noarch.rpm
+    name: "rpm -Uvh http://yum.spacewalkproject.org/2.3/RHEL/7/x86_64/spacewalk-repo-2.3-4.el7.noarch.rpm"
         
 - name: Register system with Spacewalk
   command:
