@@ -1,0 +1,13 @@
+---
+- name: Install and Start NTP
+  tasks:
+    
+  - name: Install NTP
+    yum:
+      name: ntp
+      state: present
+  
+  - name: start NTP
+    service:
+      name: ntpd
+      state: running
