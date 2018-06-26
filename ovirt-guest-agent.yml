@@ -11,3 +11,8 @@
   service:
     name: ovirt-guest-agent
     state: started
+
+- name: Restart oVirt Guest Agent
+  service:
+    name: ovirt-guest-agent
+    state: restarted
