@@ -13,17 +13,11 @@
         ansible_distribution == 'CentOS'
   
     
-    - name: Install yum-utils
-      yum:
-        name: yum-utils
-        
-    - name: Install bind-utils
-      yum:
-        name: bind-utils
-        
-    - name: Install net-tools
-      yum:
-        name: net-tools
+    - name: Install Base utilities
+      yum: name={{ item }} state=installed
+        - yum-utils
+        - bind-utils
+        - net-tools
     
     - name: Install oVirt Guest Agent
       include: ovirt-guest-agent.yml
