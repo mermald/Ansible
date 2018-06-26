@@ -1,7 +1,7 @@
 ---
 - name: Install rhn-client-tools
   yum: name={{ item }} state=installed
-  with items:
+  with_items:
     - rhn-client-tools
     - rhn-check
     - rhn-setup
