@@ -20,4 +20,4 @@
     state: present
 
 - name: Register system with Spacewalk
-  command: rhnreg_ks --serverUrl=http://spacewalk.sphere.us/XMLRPC --activationkey=1-a679786505204c5e376b342386bd5aba
+  command: rhnreg_ks --serverUrl=http://spacewalk.sphere.us/XMLRPC --activationkey=1-a679786505204c5e376b342386bd5aba --force
