@@ -4,3 +4,10 @@
     state: present
     regexp: '^PermitRootLogin '
     line: 'PermitRootLogin no'
+
+- name: Update sudoers file
+  lineinfile:
+    path: /etc/sudoers
+    state: present
+    regexp: '^# wheel'
+    line: 'test           ALL=(ALL)       NOPASSWD: ALL'
