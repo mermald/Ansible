@@ -11,7 +11,9 @@
         
       when: 
         ansible_distribution == 'CentOS'
-  
+    
+    - name: Set MOTD
+      copy: src=../files/motd dest=/etc/motd owner=root mode=644 backup=no
     
     - name: Install Base utilities
       yum: name={{ item }} state=installed
