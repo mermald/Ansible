@@ -1,0 +1,6 @@
+- name: Turn of root logins
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    state: present
+    regexp: '^#PermitRootLogin '
+    line: 'PermitRootLogin no'
