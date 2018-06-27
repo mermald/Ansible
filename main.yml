@@ -29,4 +29,4 @@
     - name: Include Spacewalk registration
       include: spacewalk_reg.yml
     - name: Include sudoers
-      include: sudoers.yml
+      include: config_files.yml
