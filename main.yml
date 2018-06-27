@@ -13,7 +13,7 @@
         ansible_distribution == 'CentOS'
     
     - name: Set MOTD
-      copy: src=../files/motd dest=/etc/motd owner=root mode=644
+      copy: src=../files/motd.txt dest=/etc/motd owner=root mode=644
     
     - name: Install Base utilities
       yum: name={{ item }} state=installed
