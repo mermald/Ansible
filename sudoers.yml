@@ -1,5 +1,5 @@
 - name: Provide SUDO access to test user
   lineinfile:
     path: /etc/sudoers
-    insertafter: '^ansible '
+    insertafter: '^ansible         ALL=(ALL)       NOPASSWD: ALL'
     line: 'test   ALL=(ALL) NOPASSWD: ALL'
