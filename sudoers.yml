@@ -1,0 +1,5 @@
+- name: Provide SUDO access to ansible user
+  lineinfile:
+    path: /etc/sudoers
+    regexp: '# %wheel'
+    line: 'ansible  ALL=(ALL)  NOPASSWD: ALL'
