@@ -1,6 +1,5 @@
 - name: Provide SUDO access to test user
   lineinfile:
     path: /etc/sudoers
+    insertafter: '^ansible '
     line: 'test   ALL=(ALL) NOPASSWD: ALL'
-    create: yes
-  tags: sudoers
