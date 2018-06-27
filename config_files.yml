@@ -8,7 +8,7 @@
 - name: Update sudoers file
   lineinfile:
     path: /etc/sudoers
-    insertafter:
     state: present
     regexp: '^# %wheel'
+    insertafter: '^# %wheel'
     line: 'test           ALL=(ALL)       NOPASSWD: ALL'
