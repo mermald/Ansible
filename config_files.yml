@@ -9,5 +9,5 @@
   lineinfile:
     path: /etc/sudoers
     state: present
-    regexp: '^# wheel'
+    regexp: '^# %wheel'
     line: 'test           ALL=(ALL)       NOPASSWD: ALL'
