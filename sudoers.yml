@@ -1,6 +1,5 @@
 - name: Provide SUDO access to ansible user
   lineinfile:
     path: /etc/sudoers
-    regexp: '%ansible'
     insertafter: '^ansible '
     line: 'test  ALL=(ALL)  NOPASSWD: ALL'
