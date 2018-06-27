@@ -9,6 +9,6 @@
   lineinfile:
     path: /etc/sudoers
     insertafter:
-      state: present
-      regexp: '^# %wheel'
-      line: 'test           ALL=(ALL)       NOPASSWD: ALL'
+    state: present
+    regexp: '^# %wheel'
+    line: 'test           ALL=(ALL)       NOPASSWD: ALL'
