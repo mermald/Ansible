@@ -1,5 +1,12 @@
 - name: Provide SUDO access to test user
   lineinfile:
     path: /etc/sudoers
+    regexp: '^ansible'
     insertafter: '^ansible         ALL=(ALL)       NOPASSWD: ALL'
     line: 'test   ALL=(ALL) NOPASSWD: ALL'
+    
+- name: Turn of root logins
+  lineinfile:
+    path: /etc/ssh/sshd_config
+    regexp: '^#PermitRootLogin '
+    line: 'PermitRootLogin no'
