@@ -6,7 +6,7 @@
     - name: Create Azure Deploy
       azure_rm_resourcegroup:
         state: present
-        resource_group: mermaldtestansible
+        name: mermaldtestansible
         subscription_id: 3047bda3-8803-4dc0-bdfa-cf1493377354
         client_id: 14309a48-a83e-4fd2-a145-6156887eacfc
         secret: iGhaBUn4uV1bzlHO9JG1oal9751UNXPgDk7WNb5RH1s=
