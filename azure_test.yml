@@ -14,4 +14,4 @@
         parameters:
           adminUsername:
             value: dmermal81@gmail.com
-register: azure
+      register: azure
