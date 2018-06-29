@@ -12,6 +12,24 @@
         subscription_id: 3047bda3-8803-4dc0-bdfa-cf1493377354
         client_id: 14309a48-a83e-4fd2-a145-6156887eacfc
         secret: iGhaBUn4uV1bzlHO9JG1oal9751UNXPgDk7WNb5RH1s=
-        tenant: 56f9b065-e197-4c2c-be8d-e57ae167da47   
+        tenant: 56f9b065-e197-4c2c-be8d-e57ae167da47 
+    - name: Create virtual network
+      azure_rm_virtualnetwork:
+        resource_group: mermaldtestansible
+        name: mermaldvnet01
+        address_prefixes: "10.10.0.0/16"
+
+    - name: Add subnet
+      azure_rm_subnet:
+        resource_group: Testing
+        name: mermaldsubnet01
+        address_prefix: "10.10.0.0/24"
+        virtual_network: mermaldvnet01
+
+    - name: Create public ip
+      azure_rm_publicipaddress:
+        resource_group: mermaldtestansible
+        allocation_method: Static
+        name: mermaldpip01
       
       register: azure
