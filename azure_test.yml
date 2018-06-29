@@ -10,9 +10,5 @@
         subscription_id: 3047bda3-8803-4dc0-bdfa-cf1493377354
         client_id: 14309a48-a83e-4fd2-a145-6156887eacfc
         secret: iGhaBUn4uV1bzlHO9JG1oal9751UNXPgDk7WNb5RH1s=
-        tenant: 56f9b065-e197-4c2c-be8d-e57ae167da47
-        parameters:
-          adminUsername:
-            value: dmermal81@gmail.com
-        template_link: 'https://gist.githubusercontent.com/vitoc/d97a885db5fe181451279d9769b15015/raw/cd1c389a50fe3d8ac32ce7995ba5cf2b3fbc3e86/gistfile1.txt'
+        tenant: 56f9b065-e197-4c2c-be8d-e57ae167da47        
       register: azure
