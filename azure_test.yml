@@ -14,4 +14,5 @@
         parameters:
           adminUsername:
             value: dmermal81@gmail.com
+        template_link: 'https://gist.githubusercontent.com/vitoc/d97a885db5fe181451279d9769b15015/raw/cd1c389a50fe3d8ac32ce7995ba5cf2b3fbc3e86/gistfile1.txt'
       register: azure
