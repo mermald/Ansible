@@ -4,7 +4,7 @@
   gather_facts: no
   tasks:
     - name: Create Azure Deploy
-      azure_rm_deployment:
+      azure_rm_resourcegroup:
         state: present
         resource_group: mermaldtestansible
         subscription_id: 3047bda3-8803-4dc0-bdfa-cf1493377354
