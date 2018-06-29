@@ -6,7 +6,7 @@
     - name: Create storage account
       azure_rm_storageaccount:
         state: present
-        resource_group: mermaltestansible
+        resource_group: mermaldtestansible
         name: testaccount001
         account_type: Standard_LRS
         subscription_id: 3047bda3-8803-4dc0-bdfa-cf1493377354
