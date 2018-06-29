@@ -94,7 +94,7 @@
         storage_container: mermaldvm01
         storage_blob: mermaldtest01.vhd
         admin_username: mermald
-        admin_password: Password!
+        admin_password: B@ndito0317
         network_interfaces: mermaldnic01
         image:
           offer: RHEL
