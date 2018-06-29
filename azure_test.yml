@@ -5,6 +5,7 @@
   tasks:
     - name: Create storage account
       azure_rm_storageaccount:
+        state: present
         resource_group: mermaltestansible
         name: testaccount001
         account_type: Standard_LRS
