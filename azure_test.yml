@@ -77,7 +77,7 @@
         tenant: 56f9b065-e197-4c2c-be8d-e57ae167da47
         name: mermaldnic01
         virtual_network: mermaldvnet01
-        subnet: subnet001
+        subnet: mermaldsubnet01
         public_ip_name: mermaldpip01
         security_group: mermaldsecgroup01
 
