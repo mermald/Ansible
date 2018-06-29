@@ -7,7 +7,7 @@
       azure_rm_storageaccount:
         state: present
         resource_group: mermaldtestansible
-        name: testaccount001
+        name: mermaldteststorage01
         account_type: Standard_LRS
         subscription_id: 3047bda3-8803-4dc0-bdfa-cf1493377354
         client_id: 14309a48-a83e-4fd2-a145-6156887eacfc
