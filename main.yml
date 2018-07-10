@@ -26,7 +26,7 @@
       include: ovirt-guest-agent.yml
     - name: Include another yaml file
       include: ntp.yml
-    - name: Include Spacewalk registration
-      include: spacewalk_reg.yml
+#    - name: Include Spacewalk registration
+#      include: spacewalk_reg.yml
     - name: Include sudoers
       include: config_files.yml
